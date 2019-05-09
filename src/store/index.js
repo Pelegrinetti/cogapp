@@ -1,7 +1,16 @@
 import { createStore } from 'redux';
 
+import { persistStore, persistReducer } from 'redux-persist';
+import { createRealmPersistStorage } from '@bankify/redux-persist-realm';
+
 import rootReducers from './reducers';
 
-const store = createStore(rootReducers);
+const persistConfig = {
+  key: 'root',
+  storage: createRealmPersistStorage(),
+};
 
-export default store;
+const persistedReducer = persistReducer(persistConfig, rootReducers);
+
+export const store = createStore(persistedReducer);
+export const persistor = persistStore(store);

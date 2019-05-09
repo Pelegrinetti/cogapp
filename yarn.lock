@@ -647,6 +647,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@bankify/redux-persist-realm@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@bankify/redux-persist-realm/-/redux-persist-realm-0.1.3.tgz#5a5bcb6d5a1ef31f43fde410959519830880adc0"
+  integrity sha512-qVxkB6pVNMwJWa6K4HRId6bZbWx7PUyUYY4YPkS98Uobw+P3ujQkF2kBcdHWHeT71AsGvSdK/LVKRqvae74Jww==
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"
@@ -6030,6 +6035,11 @@ realpath-native@^1.1.0:
   integrity sha512-wlgPA6cCIIg9gKz0fgAPjnzh4yR/LnXovwuo9hvyGvx3h8nX4+/iLZplfUWasXpqD8BdnGnP5njOFjkUwPzvjA==
   dependencies:
     util.promisify "^1.0.0"
+
+redux-persist@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-5.10.0.tgz#5d8d802c5571e55924efc1c3a9b23575283be62b"
+  integrity sha512-sSJAzNq7zka3qVHKce1hbvqf0Vf5DuTVm7dr4GtsqQVOexnrvbV47RWFiPxQ8fscnyiuWyD2O92DOxPl0tGCRg==
 
 redux@^4.0.1:
   version "4.0.1"
