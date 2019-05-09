@@ -8,6 +8,7 @@ import rootReducers from './reducers';
 const persistConfig = {
   key: 'root',
   storage: createRealmPersistStorage(),
+  whitelist: ['speaking'],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducers);
