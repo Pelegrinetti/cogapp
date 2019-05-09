@@ -7,10 +7,10 @@
 </p>
 
 Cogapp é um aplicativo com o intuito de auxiliar a comunicação com crianças com necessidades especiais.
-<br />
-## Como instalar o projeto:<br />
-- Clone o projeto.<br />
-- Instale as depedencias.<br />
-- Rode o comando:<br />
-  - Para rodar em um dispositivo android ```react-native run-android```.<br />
-  - Para rodar em dispositivo ios ```react-native run-ios```.<br />
+
+## Como instalar o projeto:
+- Clone o projeto.
+- Instale as depedencias.
+- Rode o comando:
+  - Para rodar em um dispositivo android ```react-native run-android```.
+  - Para rodar em dispositivo ios ```react-native run-ios```.
