@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
-import Realm from 'realm';
 import Icon from 'react-native-vector-icons/dist/FontAwesome5';
 import uuid from 'uuid/v4';
+
+import getRealm from '~/services/realm';
 
 import {
   Container,
@@ -14,8 +15,6 @@ import {
   PopupContent,
   PopupText,
 } from './style';
-
-import UserSchema from '~/services/models/User';
 
 RegisterUser.navigationOptions = {
   title: 'Informe o nome do usuário:',
@@ -29,15 +28,12 @@ export default function RegisterUser(props) {
   function handleSetName(username) {
     setName(username);
   }
-  function handleSaveUser() {
+  async function handleSaveUser() {
+    const realm = await getRealm();
     if (name) {
-      Realm
-        .open({ path: 'cogcom.realm', schema: [UserSchema] })
-        .then((realm) => {
-          realm.write(async () => {
-            await realm.create('User', { id: uuid(), name });
-          });
-        });
+      realm.write(() => {
+        realm.create('User', { id: uuid(), name });
+      });
       handleSetVisible();
     } else {
       handleSetVisibleEmptyName();
@@ -82,10 +78,7 @@ export default function RegisterUser(props) {
               </Button>
             </PopupContent>
           </Popup>
-          <TextInput
-            onChangeText={handleSetName}
-            placeholder="Clique aqui e informe o nome:"
-          />
+          <TextInput onChangeText={handleSetName} placeholder="Clique aqui e informe o nome:" />
           <Button onPress={handleSaveUser}>
             <Icon name="save" size={40} color="#fff" />
           </Button>

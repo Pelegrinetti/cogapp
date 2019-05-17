@@ -3,15 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { NavigationEvents } from 'react-navigation';
 
 import Icon from 'react-native-vector-icons/dist/FontAwesome5';
-import Realm from 'realm';
+import getRealm from '~/services/realm';
 
 import {
   Container, Card, Button, Title, TitleContainer,
 } from './style';
 
 import Profiles from '~/components/Profiles';
-
-import UserSchema from '~/services/models/User';
 
 Login.navigationOptions = {
   title: 'Selecione o usuário',
@@ -28,13 +26,14 @@ function Login({ navigation }) {
     navigation.navigate('RegisterUser');
   }
 
-  function handleSetUsers() {
-    Realm.open({ path: 'cogcom.realm', schema: [UserSchema] }).then((realm) => {
-      const usersResult = realm.objects('User');
-      if (Object.keys(usersResult).length) {
-        setUsers(usersResult);
-      }
-    });
+  async function handleSetUsers() {
+    const realm = await getRealm();
+
+    const usersResult = realm.objects('User');
+
+    if (Object.keys(usersResult).length) {
+      setUsers(usersResult);
+    }
   }
 
   return (
