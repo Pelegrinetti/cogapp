@@ -9,7 +9,7 @@ import {
   Container,
   Card,
   CardBody,
-  TextInput,
+  Input,
   Button,
   Popup,
   PopupContent,
@@ -78,7 +78,7 @@ export default function RegisterUser(props) {
               </Button>
             </PopupContent>
           </Popup>
-          <TextInput onChangeText={handleSetName} placeholder="Clique aqui e informe o nome:" />
+          <Input onChangeText={handleSetName} placeholder="Clique aqui e informe o nome:" />
           <Button onPress={handleSaveUser}>
             <Icon name="save" size={40} color="#fff" />
           </Button>

@@ -17,12 +17,14 @@ export const Card = styled.View`
 
 export const CardBody = styled.View`
   margin: 5px;
+  flex: 1;
+  justify-content: space-around;
   align-items: center;
 `;
 
-export const TextInput = styled.TextInput`
+export const Input = styled.TextInput`
   width: 100%;
-  height: ${Dimensions.get('screen').height * 0.47}px;
+  height: ${Dimensions.get('screen').height * 0.75}px;
   font-size: 30px;
   text-align: center;
   border-radius: 5px;

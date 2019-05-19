@@ -1,5 +1,7 @@
 import styled from 'styled-components/native';
 
+import { Dimensions } from 'react-native';
+
 export const SelectionArea = styled.ScrollView.attrs({
   horizontal: true,
   showsHorizontalScrollIndicator: false,
@@ -11,7 +13,7 @@ export const SelectionArea = styled.ScrollView.attrs({
 
 export const Profile = styled.TouchableOpacity`
   height: 100%;
-  width: 175px;
+  width: ${Dimensions.get('screen').width * 0.16}px;
   justify-content: center;
   align-items: center;
 `;

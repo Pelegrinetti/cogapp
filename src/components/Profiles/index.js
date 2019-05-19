@@ -33,11 +33,7 @@ function Profiles({
             handleSelectUser(user);
           }}
         >
-          <Icon
-            name="user-circle"
-            size={Dimensions.get('screen').width * 0.15}
-            color="#feca57"
-          />
+          <Icon name="user" size={Dimensions.get('screen').width * 0.15} color="#feca57" />
           <ProfileName>{user.name}</ProfileName>
         </Profile>
       ))}
