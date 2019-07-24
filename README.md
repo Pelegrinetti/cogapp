@@ -3,10 +3,10 @@
   <a href="https://cogcom.github.io">
     <img src="https://i.imgur.com/OQei6JG.jpg" alt="Logo" width="300" >
   </a>
-  <h1 align="center">CogApp</h1>
+  <h1 align="center">Cog_App</h1>
 </p>
 
-CogApp é um aplicativo com o intuito de auxiliar a comunicação com crianças com necessidades especiais.
+Cog_App é um aplicativo com o intuito de auxiliar a comunicação com crianças com necessidades especiais.
 
 ## Como instalar o projeto:
 - Clone o projeto.
