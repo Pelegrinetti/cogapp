@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://cogcom.github.io">
+  <a href="https://cogapp.github.io">
     <img src="https://i.imgur.com/OQei6JG.jpg" alt="Logo" width="300" >
   </a>
   <h1 align="center">Cog_App</h1>
