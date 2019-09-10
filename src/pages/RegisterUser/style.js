@@ -24,7 +24,7 @@ export const CardBody = styled.View`
 
 export const Input = styled.TextInput`
   width: 100%;
-  height: ${Dimensions.get('screen').height * 0.75}px;
+  height: ${Dimensions.get('screen').height * 0.5}px;
   font-size: 30px;
   text-align: center;
   border-radius: 5px;
