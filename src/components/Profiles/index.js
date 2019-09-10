@@ -34,7 +34,7 @@ function Profiles({
           }}
         >
           <Icon name="user" size={Dimensions.get('screen').width * 0.15} color="#feca57" />
-          <ProfileName>{user.name}</ProfileName>
+          <ProfileName numberOfLines={1}>{user.name}</ProfileName>
         </Profile>
       ))}
     </SelectionArea>
