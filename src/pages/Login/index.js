@@ -41,7 +41,7 @@ function Login({ navigation }) {
       <NavigationEvents onWillFocus={handleSetUsers} />
       <Container>
         <Card>
-          {users ? (
+          {users.length ? (
             <Profiles users={users} />
           ) : (
             <TitleContainer>

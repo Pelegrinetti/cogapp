@@ -13,6 +13,8 @@ export const Title = styled.Text`
 
 export const TitleContainer = styled.View`
   flex: 1;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Card = styled.View`
